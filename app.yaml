@@ -1,0 +1,8 @@
+application: kevincox-cdn
+handlers:
+- url: /
+  static_dir: /
+  http_headers:
+    Cache-Control: max-age=31536000, stale-while-revalidate=31536000, stale-on-error=31536000
+
+default_expiration: 365d
